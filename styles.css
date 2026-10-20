@@ -70,6 +70,7 @@ figure { margin: 0; min-width: 0; }
 .steps p { margin: 0; font-size: .94rem; }
 .steps h3 { padding-top: 7px; }
 .faq details { border-bottom: 1px solid var(--line); padding: 20px 0; }
+.faq details:last-of-type { border-bottom: 0; }
 .faq summary { cursor: pointer; font-weight: 600; padding-right: 12px; font-size: 1.05rem; }
 .faq summary::marker { color: var(--mint); }
 .faq details p { margin: 14px 0 0; max-width: 850px; }
@@ -87,7 +88,6 @@ figure { margin: 0; min-width: 0; }
 .legal h2 { font-size: 1.4rem; margin: 34px 0 14px; }
 .legal a:not(.brand) { color: var(--mint); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
 .legal li { color: var(--muted); margin-bottom: 12px; }
-.draft-note { padding: 18px; border: 1px solid #ffc16b66; border-radius: 12px; color: #ffdaa5; background: #ffc16b0a; }
 @media (max-width: 1000px) {
   .hero { gap: 32px; }
   .hero-art { padding-inline: 12px; }
