@@ -73,6 +73,8 @@ figure { margin: 0; min-width: 0; }
 .faq summary { cursor: pointer; font-weight: 600; padding-right: 12px; font-size: 1.05rem; }
 .faq summary::marker { color: var(--mint); }
 .faq details p { margin: 14px 0 0; max-width: 850px; }
+.section.faq { padding-bottom: 24px; }
+.section#support { padding-top: 24px; border-top: 0; }
 .support-card { padding: 40px; display: flex; align-items: center; gap: 40px; background: linear-gradient(120deg, #1c3845, #152438); border: 1px solid #8be5cf30; border-radius: 26px; }
 .support-card > div { flex: 1; }
 .support-card p:last-child { max-width: 660px; margin: 20px 0 0; }

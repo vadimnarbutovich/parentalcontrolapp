@@ -13,34 +13,25 @@
   <header class="container"><nav class="nav" aria-label="Navigation"><a class="brand" href="./"><img src="assets/app-icon.png" width="42" height="42" alt="">ParentalControl</a><a class="text-link" href="./">← Back to site</a></nav></header>
   <main class="container legal">
     <h1>Privacy policy</h1>
-    <p class="draft-note"><strong>Draft — not approved for publication.</strong> Prepared on October 20, 2026. The developer must confirm retention periods, service configurations, applicable child-consent requirements and data rights before publishing this policy.</p>
-    <p>This draft describes how ParentalControl, developed by Vadim Narbutovich, handles information to connect a parent’s phone with a child’s phone and provide parental-control features. Contact: <a href="mailto:vadim.narb@yandex.com">vadim.narb@yandex.com</a>.</p>
+    <p class="draft-note"><strong>Draft — not approved for publication.</strong> Updated October 20, 2026. Pending final developer review.</p>
+    <p>ParentalControl, developed by Vadim Narbutovich, helps parents manage their child’s app use from a linked phone. This policy explains how information is used to provide these features.</p>
     <h2>1. Linking devices and providing the service</h2>
-    <p>The app uses a backend hosted on Supabase. Information used for the service includes installation and device identifiers, parent/child roles, pairing information, push-notification tokens, daily limits and adjustments, blocking schedules, tasks and rewards, command delivery status, and time-usage summaries. This information enables the linked phones to synchronize. Parent PIN verification data is also synchronized; keep your PIN and pairing code private.</p>
-    <p>The app does not require a conventional email-and-password account for pairing. This does not mean the app is anonymous or that all data remains on the device.</p>
+    <p>The server stores settings, tasks and rewards, time balances and usage summaries, and the child’s latest requested location. It also processes technical device identifiers, pairing and PIN verification data, and commands with their delivery status so the linked phones can communicate. Pairing does not require an account with your name or email address.</p>
     <h2>2. The child’s location</h2>
-    <p>When a parent requests a location and the child’s device can respond, the app sends coordinates, accuracy and a capture timestamp to the backend so the linked parent can see the location on a map. Background location requests require “Always” permission on the child’s phone. The backend stores the latest location state for the linked family.</p>
-    <p>Location access can be changed in iOS Settings. Restricting it may prevent location requests from working. Location delivery is not guaranteed and the feature is not an emergency service.</p>
-    <h2>3. Screen Time and local storage</h2>
-    <p>With Screen Time authorization, the app uses Apple’s Family Controls, Managed Settings and Device Activity frameworks to manage selected apps. App selections and enforcement settings are stored on the child’s device. The main app and its extensions share relevant local state through an App Group and protected device storage. Usage summaries and time balances are synchronized for the parent’s dashboard; detailed Screen Time reports are displayed on the child’s device.</p>
-    <p>Camera access may be used to scan a pairing code. Any optional activity features that access HealthKit or use the camera to count exercise repetitions require the relevant permissions. Their presence and data flows should be checked against the final released feature set before this draft is approved.</p>
-    <h2>4. Service providers</h2>
-    <ul>
-      <li><strong>Supabase:</strong> backend hosting, database storage and communication between linked devices. <a href="https://supabase.com/privacy">Supabase privacy policy</a>.</li>
-      <li><strong>Apple:</strong> Screen Time services, push delivery, location services and App Store purchases. <a href="https://www.apple.com/legal/privacy/">Apple privacy information</a>.</li>
-      <li><strong>RevenueCat:</strong> subscription and entitlement management, including app-user identifiers and purchase-related information. <a href="https://www.revenuecat.com/privacy/">RevenueCat privacy policy</a>.</li>
-      <li><strong>AppMetrica:</strong> app analytics. The application initializes this SDK and reports product events. The precise automatic collection, device identifiers, diagnostic data and configuration on child devices must be confirmed before publication. <a href="https://appmetrica.yandex.com/">AppMetrica</a>.</li>
-    </ul>
-    <p>Service providers may process information outside your country. The final policy must identify the applicable processing arrangements and safeguards; they cannot be determined solely from the application source code.</p>
+    <p>When you request your child’s location, their phone sends coordinates, accuracy and an update time to the server for display on your linked phone. The latest location is stored for this purpose. Background requests require “Always” location access on the child’s phone. You can change this permission in iOS Settings.</p>
+    <h2>3. How the app works</h2>
+    <p>With the required permissions, ParentalControl manages access to selected apps on the child’s phone. Settings are stored locally and relevant information is synchronized between linked devices. Permissions can be managed in iOS Settings; disabling them may limit the corresponding features.</p>
+    <h2>4. Analytics and supporting services</h2>
+    <p>We use AppMetrica to understand how the app works and improve it. It processes technical information about the app and device, technical identifiers, usage events and purchase-related events. The app does not ask you to provide your name or contact details for analytics. Technical identifiers can distinguish app installations. <a href="https://appmetrica.yandex.com/docs/en/data-security/app-privacy-apple">About AppMetrica data processing</a>.</p>
+    <p>Third-party infrastructure supports hosting, notifications and subscription management. These services process the information needed for their functions, including device identifiers and purchase status. Processing may take place outside your country.</p>
     <h2>5. Children and parental involvement</h2>
-    <p>The app includes a child-device role and is intended to be configured and managed by a parent or legal guardian. The parent should explain the selected controls and location feature to their child in an age-appropriate way. Device permission prompts do not replace any parental consent or other authorization required by applicable law.</p>
+    <p>The child’s phone should be set up and managed by a parent or legal guardian, who should explain the controls and location feature to the child. Any consent required by applicable law must be obtained before use.</p>
     <h2>6. Retention, unlinking and deletion</h2>
-    <p>Service records are stored to operate the linked-device features. The current backend includes deletion of family-linked records when devices are unlinked. Removing the app alone should not be treated as confirmation that server records, service-provider records or backups have been deleted.</p>
-    <p>For a data access or deletion request, contact <a href="mailto:vadim.narb@yandex.com">vadim.narb@yandex.com</a>. Do not include your PIN, pairing code or precise location in the initial email. The developer must confirm a secure verification procedure and specific retention periods for active records, logs, analytics and backups before publishing the final policy.</p>
+    <p>Settings, tasks, location and technical records are retained to provide synchronization and app features. Unlinking devices initiates deletion of family-linked records; device registration records remain available for reconnection. Removing the app does not by itself delete all server or service-provider data. Contact us to request access to or deletion of your data.</p>
     <h2>7. Support and this website</h2>
-    <p>If you email support, your email address, message and any information you choose to include will be processed to respond to your request. This static website includes no analytics scripts, advertising scripts, forms or cookies set by its own code. It is intended to be hosted on GitHub Pages; the hosting provider may process connection data under its own policies. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>.</p>
-    <h2>8. Changes and questions</h2>
-    <p>The published policy should carry an effective date and explain any material changes. Questions about this draft or the app can be sent to <a href="mailto:vadim.narb@yandex.com">vadim.narb@yandex.com</a>.</p>
+    <p>If you contact support, we use your email address and message to respond. This website has no analytics scripts or cookies set by its own code. The hosting provider may process connection data.</p>
+    <h2>8. Contact</h2>
+    <p>For questions about the app or your data, email <a href="mailto:vadim.narb@yandex.com">vadim.narb@yandex.com</a>.</p>
   </main>
   <footer class="container footer"><a href="./">← ParentalControl</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a><p>© 2026 Vadim Narbutovich</p></footer>
 </body>
