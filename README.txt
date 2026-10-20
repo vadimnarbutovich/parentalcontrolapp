@@ -42,9 +42,18 @@ ParentalControl — информационный сайт для GitHub Pages
 Иконка: ParentalControl/Assets.xcassets/AppIcon.appiconset/AppIcon.png
 Обложки: Docs/Assets/AppStore/noStars/{en,ru}/cover-1206x2622.png
 Экраны: Docs/Assets/AppStore/screenshots-features/ и соответствующая ru/папка.
-Изображения скопированы без изменения оригиналов. Скриншоты загружаются
-лениво; PNG сохранены в исходном качестве. Архивные Website/docs и
-Website/screenblockerapp не изменялись.
+Оригиналы в приложении и Docs не изменяются. Для сайта созданы JPEG
+шириной 600/900 px с качеством 85 и PNG-иконка 256 px. srcset/sizes
+позволяют браузеру выбрать размер под экран и плотность пикселей.
+Обложка загружается с высоким приоритетом, скриншоты — лениво.
+Тяжёлые PNG-копии удалены только из текущей версии сайта; они остаются
+в истории Git и в исходных материалах приложения. Архивные Website/docs
+и Website/screenblockerapp не изменялись.
+
+Пересоздать изображения на macOS (из папки сайта):
+  node tools/optimize-images.mjs /путь/к/проекту/ParentalControl
+Скрипт использует встроенный sips, без дополнительных зависимостей.
+Повторное сжатие всегда выполняется из оригинальных PNG, а не из JPEG.
 
 Проверка из корня проекта ParentalControl:
   node Tests/MarketingSite/validate.cjs
