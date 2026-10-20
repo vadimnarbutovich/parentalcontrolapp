@@ -61,7 +61,6 @@ h3 { font-size: 1.28rem; letter-spacing: -.015em; margin-bottom: 14px; }
 .screens { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
 figure { margin: 0; min-width: 0; }
 .screens img { width: 100%; border-radius: 22px; border: 1px solid var(--line); background: #d3eef0; }
-figcaption { font-size: .78rem; color: var(--muted); padding: 16px 3px 0; }
 .swipe-note { display: none; }
 .setup { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; }
 .steps { list-style: none; counter-reset: step; padding: 0; margin: 0; }
